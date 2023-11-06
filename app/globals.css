@@ -15,10 +15,67 @@
 
 @layer components {
     .top__section{
-        @apply sm:flex sm:h-[480px] w-full
+        @apply sm:flex sm:h-[480px] w-full relative
     }
+
+    .mobileheader__container{
+        @apply absolute h-[14px] top-[45px] z-[6] w-full sm:hidden flex items-center justify-center
+    }
+
+    .mobile__hambuger{
+        @apply absolute z-[6] sm:hidden left-[24px] top-[45px] hover:cursor-pointer
+    }
+    .slideShow_buttonsContainer{
+        @apply flex absolute w-[29.87vw] h-[56px] sm:h-[70px] sm:w-[11.07vw] top-[303px] sm:top-[410px] right-[0.1px] sm:left-[58.08%] bg-black z-[5]
+    }
+
+    .side__bar{
+        @apply fixed w-full z-[7] flex sm:hidden h-screen bg-gradient-to-r from-black/70 to-black/40 transition duration-[400] delay-500 ease-linear
+        transform translate-x-0
+    }
+    .close__sideBar{
+        @apply transform translate-x-full
+    }
+    .nav_List{
+        @apply flex sm:space-x-3 md:space-x-4 lg:space-x-5 items-center h-3.5 pt-1 text-white
+
+    }
+    .navList_Sidebar{
+        @apply flex items-center space-x-6 font-bold
+    }
+
+
+    .topSection__leftContainer{
+        @apply w-full h-[361px] sm:w-[58.08%]  sm:h-[480px] 
+    }
+    
+    .topSection__rightContainer{
+        @apply w-full h-[410px] sm:w-[41.92%] sm:h-[480px] flex items-center justify-center
+    }
+
+    .topRightContainer__textBox{
+        @apply h-[295px] w-[327px] sm:h-[320px] md:h-[300px] lg:h-[264px] sm:w-[310px] md:w-[340px]  lg:w-[394px]
+    }
+
+
     .bottom__section{
         @apply sm:flex sm:h-[243px] w-full
     }
+
+    .bottomSection__leftContainer{
+        @apply w-full h-[238px] sm:h-[243px] sm:w-[29.2%]
+    }
+
+    .bottomSection__centerContainer{
+        @apply w-full h-[301px] sm:w-2/5 sm:h-[243px] flex items-center justify-center
+    }
+
+    .bottomSection__rightContainer{
+        @apply w-full h-[228px] sm:h-[243px] sm:w-[30.8%]
+    }
+
+    
+
+
 }
 

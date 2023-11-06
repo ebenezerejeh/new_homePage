@@ -4,18 +4,39 @@ import Image from 'next/image'
 const TopSection = () => {
   return (
     <div className='top__section'>
-        <div className='w-full h-[358px] sm:w-[58.08%]  sm:h-[480px] '>
+
+        <Image className='mobile__hambuger h-3.5 w-6' src={'/icon-hamburger.svg'}
+        width={500} height={500}
+        alt='icon-hamburger'
+        />
+
+      
+      <div className='mobileheader__container'>
+      <Image className='h-3.5 w-14' src={'/logo.svg'}
+        width={500} height={500}
+        alt='Header-icon'
+        />
+
+      </div>
+
+      <div className='topSection__leftContainer'>
             <Image src={'/desktop-image-hero-1.jpg'} alt='desktopImage'
             height={500} width={500} className='w-full h-full'          
               />
 
-        </div>
-        <div className=' w-full h-[410px] sm:w-[41.92%] sm:h-[480px] flex items-center justify-center' >
-              <div className='  h-[295px] w-[320px] sm:h-[320px] md:h-[300px] lg:h-[264px] sm:w-[310px] md:w-[340px]  lg:w-[394px]'>
+       </div>
 
-                <div className=' mb-2 sm:mb-2 md:mb-3 lg:mb-5'><p className='text-[35px] sm:text-[32px] md:text-[35px]  lg:text-[40px] leading-10 font-bold'>Discover innovative ways to decorate</p></div>
+        <div className='topSection__rightContainer' >
+              <div className='topRightContainer__textBox'>
 
-                <div className='text-dark-gray sm:text-sm mb-2 sm:mb-2 md:mb-3 lg:mb-5 '><p>We provide unmatched quality, comfort, and style for property owners across the country. 
+                <div className=' mb-2 sm:mb-2 md:mb-3 lg:mb-5'>
+                  <p className='text-[35px] sm:text-[32px] md:text-[35px]  lg:text-[40px] leading-10 font-bold'>
+                    Discover innovative ways to decorate
+                    </p>
+                </div>
+
+                <div className='text-dark-gray sm:text-sm mb-2 sm:mb-2 md:mb-3 lg:mb-5 '>
+                  <p>We provide unmatched quality, comfort, and style for property owners across the country. 
                 Our experts combine form and function in bringing your vision to life. Create a room in your 
                 own style with our collection and make your property a reflection of you and what you love.
               </p></div>
