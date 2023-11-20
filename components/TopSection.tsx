@@ -1,7 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
+import { data } from '@/Constants/data'
+
 
 const TopSection = () => {
+  const {id, name, header, body} = data[1];
   return (
     <div className='top__section'>
 
@@ -20,7 +23,7 @@ const TopSection = () => {
       </div>
 
       <div className='topSection__leftContainer'>
-            <Image src={'/desktop-image-hero-1.jpg'} alt='desktopImage'
+            <Image src={`/${name}.jpg`} alt='desktopImage'
             height={500} width={500} className='w-full h-full'          
               />
 
@@ -31,15 +34,12 @@ const TopSection = () => {
 
                 <div className=' mb-2 sm:mb-2 md:mb-3 lg:mb-5'>
                   <p className='text-[35px] sm:text-[32px] md:text-[35px]  lg:text-[40px] leading-10 font-bold'>
-                    Discover innovative ways to decorate
+                    {header}
                     </p>
                 </div>
 
                 <div className='text-dark-gray sm:text-sm mb-2 sm:mb-2 md:mb-3 lg:mb-5 '>
-                  <p>We provide unmatched quality, comfort, and style for property owners across the country. 
-                Our experts combine form and function in bringing your vision to life. Create a room in your 
-                own style with our collection and make your property a reflection of you and what you love.
-              </p></div>
+                  <p>{body}</p></div>
 
                 <div className='w-[210px] flex items-center justify-between'>
                   <p className='tracking-[0.6em] font-bold hover:text-dark-gray hover:cursor-pointer'>SHOP NOW</p>

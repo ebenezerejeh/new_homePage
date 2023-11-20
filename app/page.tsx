@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <main className='w-full relative'>
       <Header/>
-      <SideBar/>
       <Buttons/>
+      <SideBar/>
       <TopSection/>
       <BottomSection/>
     </main>
