@@ -3,6 +3,10 @@ import { createContext, useContext, useState,} from 'react'
 
 // export const BackGroundContext = createContext()
 
+export const BackGroundContext= createContext({})
+
+
+
 const [value, setValue] = useState(0);
 const [isOpen, setIsOpen] = useState(false);
 
@@ -38,4 +42,9 @@ const openSideBar = ()=>{
 
 nextItem();
 console.log(value);
+
+
+
+
+
 
