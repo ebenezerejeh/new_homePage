@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { BackGroundContextProvider } from '@/context/BackgroundContext'
 
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body><BackGroundContextProvider>{children}</BackGroundContextProvider></body>
     </html>
   )
 }

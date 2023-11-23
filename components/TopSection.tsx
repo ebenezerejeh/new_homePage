@@ -1,17 +1,23 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import { data } from '@/Constants/data'
+import { useGlobalContext } from '@/context/BackgroundContext'
 
 
 const TopSection = () => {
-  const {id, name, header, body} = data[1];
+  const {value, openSideBar, setValue} = useGlobalContext();
+  // console.log(value);
+  const {id, name, header, body} = data[value];
   return (
     <div className='top__section'>
 
-        <Image className='mobile__hambuger h-3.5 w-6' src={'/icon-hamburger.svg'}
+        
+        <Image className='mobile__hambuger hover:cursor-pointer h-3.5 w-6' src={'/icon-hamburger.svg'}
         width={500} height={500}
-        alt='icon-hamburger'
+        alt='icon-hamburger' onClick={openSideBar}
         />
+        
 
       
       <div className='mobileheader__container'>

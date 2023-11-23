@@ -23,14 +23,14 @@
     }
 
     .mobile__hambuger{
-        @apply absolute z-[6] sm:hidden left-[24px] top-[45px] hover:cursor-pointer
+        @apply absolute z-[7] sm:hidden left-[35px] top-[45px] hover:cursor-pointer
     }
     .slideShow_buttonsContainer{
         @apply flex absolute w-[29.87vw] h-[56px] sm:h-[70px] sm:w-[11.07vw] top-[303px] sm:top-[410px] right-[0.1px] sm:left-[58.08%] bg-black z-[5]
     }
 
     .side__bar{
-        @apply fixed w-full z-[7] flex sm:hidden h-screen bg-gradient-to-r from-black/70 to-black/40 transition duration-[400] delay-500 ease-linear
+        @apply fixed w-full z-[7] flex sm:hidden h-screen bg-gradient-to-r from-black/70 to-black/40 transition duration-[200] delay-200 ease-linear
         transform translate-x-0
     }
     .close__sideBar{
@@ -41,7 +41,7 @@
 
     }
     .navList_Sidebar{
-        @apply flex items-center space-x-6 font-bold
+        @apply flex items-center space-x-6 font-bold p-2 
     }
 
 
@@ -72,6 +72,9 @@
 
     .bottomSection__rightContainer{
         @apply w-full h-[228px] sm:h-[243px] sm:w-[30.8%]
+    }
+
+    li{ @apply hover:cursor-pointer border-black hover:border-b sm:border-white 
     }
 
     
